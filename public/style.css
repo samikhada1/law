@@ -1,3 +1,88 @@
-body {
-    background-color: black;
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+/*-----------------------------------------------------NAV BAR---------------------------------------------------------------------*/
+nav.topNav{
+    background-color: #a52a2a;
+    height: 80px;
+    width: 100%;
+}
+label.Logo{
+    color:white;
+    font-size: 35px;
+    line-height: 80px;
+    padding:0 100px;
+    font-weight: bold;
+}
+nav  ul {
+    float: right;
+    margin-right: 80px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin:0 20px;
+}
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    padding:10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+a.action,a:hover {
+    background: #CC3636;
+    transition: .5s;
+}
+.checkbtn{
+    color:white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right:40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:952px){
+    label.Logo {
+        font-size: 30px;
+        padding-left:50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 881px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background: #a52a2a;
+        top:80px;
+        left:0;
+        text-align: center;
+    }
+    .topNav nav ul li {
+        display: block;
+    }
+    nav ul li a {
+        font-size:20px;
+    }
+    a:hover,a.action{
+        background: none;
+        color:#CC3636;
+    }
 }
