@@ -28,12 +28,12 @@ nav  ul {
 nav ul li {
     display: inline-block;
     line-height: 80px;
-    margin:0 20px;
+    margin:0 15px;
 }
 nav ul li a {
     color: white;
-    font-size: 20px;
-    padding:10px;
+    font-size: 18px;
+    padding:8px;
     border-radius: 10px;
     text-transform: uppercase;
 }
@@ -43,10 +43,10 @@ a.action,a:hover {
 }
 .checkbtn{
     color:white;
-    font-size: 30px;
-    float: right;
     line-height: 80px;
     margin-right:40px;
+    font-size: 30px;
+    float: right;
     cursor: pointer;
     display: none;
 }
@@ -62,7 +62,7 @@ a.action,a:hover {
         font-size: 16px;
     }
 }
-@media (max-width: 881px){
+@media (max-width: 858px){
     .checkbtn{
         display: block;
     }
@@ -70,19 +70,25 @@ a.action,a:hover {
         position:fixed;
         width:100%;
         height:100vh;
-        background: #a52a2a;
+        background: #d94826;
         top:80px;
-        left:0;
+        left:-100%;
         text-align: center;
+        transition: all .5s;
     }
-    .topNav nav ul li {
+    nav ul li {
         display: block;
+        margin:50px 0;
+        line-height: 30px;
     }
     nav ul li a {
         font-size:20px;
     }
     a:hover,a.action{
         background: none;
-        color:#CC3636;
+        color:#292cd6;
+    }
+    #check:checked ~ ul{
+        left:0;
     }
 }
