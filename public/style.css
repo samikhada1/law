@@ -9,86 +9,85 @@
 
 
 /*-----------------------------------------------------NAV BAR---------------------------------------------------------------------*/
-nav.topNav{
-    background-color: #a52a2a;
-    height: 80px;
-    width: 100%;
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: grey;
 }
-label.Logo{
-    color:white;
-    font-size: 35px;
-    line-height: 80px;
-    padding:0 100px;
-    font-weight: bold;
-}
-nav  ul {
-    float: right;
-    margin-right: 80px;
-}
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin:0 15px;
-}
-nav ul li a {
-    color: white;
-    font-size: 18px;
-    padding:8px;
-    border-radius: 10px;
+.logo {
+    color:rgb(255, 255, 255);
     text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+
 }
-a.action,a:hover {
-    background: #CC3636;
-    transition: .5s;
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width:40%;
 }
-.checkbtn{
-    color:white;
-    line-height: 80px;
-    margin-right:40px;
-    font-size: 30px;
-    float: right;
-    cursor: pointer;
+.nav-links a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.burger {
     display: none;
+    cursor: pointer ;
 }
-#check{
-    display: none;
+.burger div{
+    width:20px;
+    height: 2.5px;
+    background-color:rgb(255, 255, 255);
+    margin:3px;
 }
-@media (max-width:952px){
-    label.Logo {
-        font-size: 30px;
-        padding-left:50px;
+@media screen and (max-width:1024px){
+    .nav-links{
+        width:60%;
     }
-    nav ul li a{
-        font-size: 16px;
-    }
 }
-@media (max-width: 858px){
-    .checkbtn{
+
+@media screen and (max-width:890px){
+    body{
+        overflow-x:hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top:8vh;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width: 100%;
+        transform: translateX(100%);
+    }
+    .nav-links li {
+        opacity: 0;
+
+    }
+    .burger{
         display: block;
     }
-    ul{
-        position:fixed;
-        width:100%;
-        height:100vh;
-        background: #d94826;
-        top:80px;
-        left:-100%;
-        text-align: center;
-        transition: all .5s;
+}
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
     }
-    nav ul li {
-        display: block;
-        margin:50px 0;
-        line-height: 30px;
+    to{
+        opacity: 1;
+        transform: translateX(0px);
     }
-    nav ul li a {
-        font-size:20px;
-    }
-    a:hover,a.action{
-        background: none;
-        color:#292cd6;
-    }
-    #check:checked ~ ul{
-        left:0;
-    }
+    
 }
