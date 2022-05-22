@@ -7,34 +7,36 @@
 }
 
 
-
 /*-----------------------------------------------------NAV BAR---------------------------------------------------------------------*/
-
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: grey;
+    background-color: rgb(82, 80, 80);
 }
 .logo {
-    color:rgb(255, 255, 255);
+    color:rgb(12, 11, 11);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
-
 }
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width:40%;
+    width:50%;
 }
 .nav-links a {
-    color:rgb(255, 255, 255);
+    color:rgb(12, 11, 11);
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.imglogo {
+    max-width: 15%;
+    max-height: 15%;
 }
 .burger {
     display: none;
@@ -43,16 +45,25 @@ nav {
 .burger div{
     width:20px;
     height: 2.5px;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(12, 11, 11);
     margin:3px;
 }
+
+.nav-links a:hover {
+    color:rgb(202, 179, 75);
+}
+
 @media screen and (max-width:1024px){
     .nav-links{
-        width:60%;
+        width:80%;
     }
 }
 
 @media screen and (max-width:890px){
+    nav {
+        position:fixed;
+        width:100%;
+    }
     body{
         overflow-x:hidden;
     }
@@ -61,7 +72,7 @@ nav {
         right: 0px;
         height: 92vh;
         top:8vh;
-        background-color: grey;
+        background-color: rgb(82, 80, 80);
         display: flex;
         flex-direction: column;
         align-items:center;
@@ -74,6 +85,10 @@ nav {
     }
     .burger{
         display: block;
+    }
+    .imglogo {
+        max-width: 14%;
+        max-height: 14%;
     }
 }
 .nav-active {
@@ -90,4 +105,49 @@ nav {
         transform: translateX(0px);
     }
     
+}
+/*-----------------------------------------------------FOOTER---------------------------------------------------------------------*/
+
+footer{
+    background-color: rgb(82, 80, 80);
+    padding:20px 0px;
+}
+footer a {
+    color:black;
+}
+.footer-container {
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 2rem;
+    width: 80%;
+    margin:auto;
+}
+.img-footer {
+    width: 40%;
+}
+.location {
+    width:20%;
+    font-size: 1.1rem;
+}
+.mails{
+    display: flex;
+    flex-wrap: wrap;
+    width:20%;
+    font-size: 1.2rem;
+
+}
+.mails ul li{
+    padding:0.3rem;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.social a{
+    margin:0.5rem 1.5rem;
+}
+.space {
+    height: 100vh;
 }
