@@ -14,6 +14,13 @@ const navSlide = () => {
             }
         });
     });
-    
 }
 navSlide();
+
+function initMap() {
+    var location = {lat: 41.270303, lng: 69.167140};
+    var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: location
+});
+}
