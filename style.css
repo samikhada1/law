@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 /*-----------------------------------------------------NAV BAR---------------------------------------------------------------------*/
 nav {
     display: flex;
@@ -40,7 +39,7 @@ nav {
 }
 .burger {
     display: none;
-    cursor: pointer ;
+    cursor: pointer ; 
 }
 .burger div{
     width:20px;
@@ -64,9 +63,11 @@ nav {
         position:static;
         width:100%;
     }
-    body{
-        overflow-x:hidden;
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
     }
+    
     .nav-links {
         position: absolute;
         right: 0px;
