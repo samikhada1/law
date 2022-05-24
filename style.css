@@ -118,8 +118,7 @@ footer a {
     display: flex;
     flex-wrap:wrap;
     width: 80%;
-    margin:auto;
-    padding-top:2rem;
+    justify-content: space-around;
 }
 .logo{
     display: flex;
@@ -150,7 +149,16 @@ footer a {
     padding-bottom:0.5rem;
     margin-bottom:0.4rem;
 }
+
 @media screen and (max-width:1024px){
+    .footer-container{
+        width:100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:890px){
     .footer-container{
         width:60%;
         display: flex;
@@ -158,6 +166,7 @@ footer a {
         justify-content: center;
         align-items: center;
         padding-bottom: 3rem;
+        margin:auto;
     }
     .mails {
         width:100%;
@@ -170,6 +179,8 @@ footer a {
         width:50%;
     }
 }
+
+
 .space {
     height: 100vh;
 }
