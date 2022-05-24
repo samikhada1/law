@@ -61,7 +61,7 @@ nav {
 
 @media screen and (max-width:890px){
     nav {
-        position:fixed;
+        position:static;
         width:100%;
     }
     body{
