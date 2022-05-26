@@ -11,8 +11,9 @@
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #343536;
     color: white;
+    padding:1rem;
 }
 
 .brand-title {
@@ -32,6 +33,7 @@
 
 .navbar-links li {
     list-style: none;
+    margin:0rem 0.5rem;
 }
 
 .navbar-links li a {
@@ -71,6 +73,7 @@
 
     .toggle-button {
         display: flex;
+        margin:1rem;
     }
 
     .navbar-links {
@@ -88,7 +91,7 @@
     }
 
     .navbar-links ul li a {
-        padding: .5rem 1rem;
+        padding: 1.5rem 1rem;
     }
 
     .navbar-links.active {
@@ -97,10 +100,16 @@
 }
 /*-----------------------------------------------------FOOTER---------------------------------------------------------------------*/
 .top-footer{
-    background-color: rgb(82, 80, 80);
+    background-color: #343536;
 }
 footer a {
-    color:rgb(12, 11, 11);
+    color:white;
+}
+footer p {
+    color:white;
+}
+footer h3 {
+    color:white;
 }
 .footer-container {
     display: flex;
@@ -122,9 +131,21 @@ footer a {
     margin-right:2rem;
     width:20%;
 }
+.location i {
+    padding-right:0.5rem;
+}
+.location ul li {
+    padding:0.15rem 0rem;
+}
 .mails{
     margin-top:20px;
     width:20%;
+}
+.mails i{
+    padding-right:0.5rem;   
+}
+.mails ul li {
+    padding:0.15rem 0rem;
 }
 .social{
     font-size: 1.7rem;
@@ -134,7 +155,7 @@ footer a {
     padding-right:2rem;
 }
 .title-footer {
-    border-bottom: 1px solid rgb(12, 11, 11);
+    border-bottom: 1px solid white;
     padding-bottom:0.5rem;
     margin-bottom:0.4rem;
 }
@@ -167,16 +188,16 @@ footer a {
     }
 }
 .bot-footer {
-    background-color: rgb(82, 80, 80);
+    background-color: #343536;
     width:100%;
     height:6vh;
-    border-top: 1px solid rgb(12, 11, 11);
+    border-top: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .bot-footer h4 {
-    color:rgb(12, 11, 11);
+    color:white;
     font-weight: 500;
 }
 .space {
