@@ -44,9 +44,11 @@
 }
 
 .navbar-links li:hover {
-    background-color: #555;
+    background-color: #72a8cf;
 }
-
+.navbar-links li a:hover{
+    color:#1b4c6e;
+}
 .toggle-button {
     position: absolute;
     top: .75rem;
@@ -88,10 +90,11 @@
 
     .navbar-links ul li {
         text-align: center;
+        margin:0.2rem;
     }
 
     .navbar-links ul li a {
-        padding: 1.5rem 1rem;
+        padding: 1rem;
     }
 
     .navbar-links.active {
@@ -136,6 +139,7 @@ footer h3 {
 }
 .location ul li {
     padding:0.15rem 0rem;
+    color:white;
 }
 .mails{
     margin-top:20px;
@@ -198,7 +202,9 @@ footer h3 {
 }
 .bot-footer h4 {
     color:white;
-    font-weight: 500;
+}
+footer a:hover {
+    color:#72a8cf;
 }
 .space {
     height: 100vh;
